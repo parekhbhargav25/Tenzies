@@ -4,7 +4,7 @@ import NumbersBox from './components/NumbersBox'
 import confetti from "canvas-confetti";
 
 function App() {
-  const [dicenuM, setDiceNum ] = useState(generateAllNewDice())
+  const [dicenuM, setDiceNum ] = useState(() => generateAllNewDice())
   const [count, setCount] = useState(0)
 
   var allTrue = () => {
