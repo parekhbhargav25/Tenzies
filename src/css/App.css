@@ -1,0 +1,83 @@
+.maincontianer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 540px;
+    height: auto;
+    min-height: 568px;
+    background-color: #0B2434;
+    padding: 30px;
+}
+
+.innerMain {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    min-height: 480px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    padding-top: 33px;
+
+}
+
+.gameSection {
+    display: flex;
+    align-items: center;
+    width: 376.319984px;
+    height: 379.199982px;
+    flex-direction: column;
+    padding: 0px;
+}
+
+.gameSection h1{
+    font-family: "Karla", sans-serif;
+    font-weight: 700;
+    font-size: 38.4px;
+    line-height: 100%;
+    letter-spacing: -3%;
+    color: #2B283A;
+    
+}
+
+.gameSection p{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 19.66500px;
+    line-height: 100%;
+    letter-spacing: -3%;
+    color: #4A4E74;
+    text-align: center;
+    max-width: 350px; 
+    margin: 0;
+}
+
+.numberInner {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+    row-gap: 40px;
+    width: 100%;
+}
+
+.rollButton {
+    display: flex;
+    justify-content: center;
+}
+.rollButton button{
+    background-color: #5035FF;
+    font-family: "Karla", sans-serif;
+    font-weight: 700;
+    font-size: 24.57px;
+    color: #FFFFFF;
+    width: 138.24px;
+    height: 53.7600002px;
+    border: none;
+    outline: none;
+    border-radius: 5.71500px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
