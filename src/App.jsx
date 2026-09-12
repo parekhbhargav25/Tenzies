@@ -28,10 +28,12 @@ function App() {
     return allvalueSame
   }
 
+  const gameWon = allSame() && allTrue()
+
   // console.log("values are all same? " + allSame())
   //  console.log("values are all true? " + allTrue())
 
-  if (allTrue() && allSame()) {
+  if (gameWon) {
     confetti({
       particleCount: 100,
       spread: 70,
@@ -39,15 +41,6 @@ function App() {
     });
     // console.log ("game won")
   }
-
-
-  // const handleCelebrate = () => {
-  //   confetti({
-  //     particleCount: 100,
-  //     spread: 70,
-  //     origin: { y: 0.6 },
-  //   });
-  // }
 
   
 
@@ -118,7 +111,7 @@ function App() {
               ?
               <button style={{backgroundColor:"#DD2D4A", fontSize:"20px"}} onClick={resetGame}> Reset game </button>
               :
-              <button disabled={(allTrue() && allSame())} onClick={rollDice}> Roll </button>
+              <button disabled={gameWon} onClick={rollDice}> Roll </button>
               }
               {/* <button disabled={(allTrue() && allSame())} onClick={rollDice}> Roll </button>
               <button onClick={resetGame}> Reset </button> */}
